@@ -1,4 +1,7 @@
-const fs =require('fs');
-fs.writeFileSync("hello text","Hello i used extended functionality of Node.js to access my local storage and create a folder in it")
+const [a,b,,...d]="my name is Bhaskar kathuria Software Developer".split(' ')
 
-console.log("Hello world!")
+//console.log(sentence)
+
+//=sentence
+
+console.log(d)
