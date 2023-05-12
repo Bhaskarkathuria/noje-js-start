@@ -1,8 +1,17 @@
-const http = require('http');
+const http=require('http');
 
-const server=http.createServer((request,response)=>
+const port=4000;
+
+const server=http.createServer(function(request,response)
 {
-    console.log("bhaskar kathuria")
-});
+    response.write("Bhaska Kathuria made this server")
+    response.end()
+})
 
-server.listen(4000);
+server.listen(port,function(error){
+    if(error){
+        console.log('Something went wrong',error)
+    }else{
+        console.log('server is listning on port',port)
+    }
+})
